@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.4.4",
+    "tailwind": "^4.0.0",
     "vue": "^2.6.10",
-    "vue-class-component": "^7.0.2",
+    "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.3.0"
   },
   "devDependencies": {

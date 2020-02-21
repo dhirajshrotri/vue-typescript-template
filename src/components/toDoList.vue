@@ -7,7 +7,7 @@
             </label>
       </div>
         <div class="row">
-            <button @click="onClick">Add</button>
+            <button @click="hello">Add</button>
         </div>
         <div class="row">
             <li v-for="items in list" :key="items">
@@ -17,25 +17,30 @@
     </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+// import { Component, Vue } from 'vue-property-decorator';
+// import { Log } from '@/decorators/decorators'
 
-@Component
-export default class ToDoList extends Vue {
-    message: string
+// @Component
+// export default class ToDoList extends Vue {
+//     message: string
 
-    list: string[]
+//     list: string[]
 
-    constructor() {
-      super();
+//     constructor() {
+//       super();
 
-      this.list = [];
-      this.message = '';
-    }
+//       this.list = [];
+//       this.message = '';
+//     }
 
-    onClick() {
-      this.list.push(this.message);
-      this.message = '';
-    }
-}
+//     @Log
+//     hello() {
+//         //... 
+//     }
+//     // onClick() {
+//     //   this.list.push(this.message);
+//     //   this.message = '';
+//     // }
+// }
 
 </script>

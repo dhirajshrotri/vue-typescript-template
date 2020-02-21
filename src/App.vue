@@ -1,17 +1,18 @@
 <template>
-  <div id="app">
-    <ToDoList></ToDoList>
+  <div id="app" class="container mx-auto">
+    <!-- <ToDoList></ToDoList> -->
+    <myFormInVue></myFormInVue>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
-import ToDoList from './components/toDoList.vue';
+// import HelloWorld from './components/HelloWorld.vue';
+import myFormInVue from './components/myFormInVue.vue';
+
 @Component({
   components: {
-    HelloWorld,
-    ToDoList,
+    myFormInVue
   },
 })
 export default class App extends Vue {}
